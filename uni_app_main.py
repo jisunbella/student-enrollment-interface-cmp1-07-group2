@@ -1,4 +1,4 @@
-from uni_app import UniApp
+from uni_system import UniApp
 
 if __name__ == "__main__":
     app = UniApp()
