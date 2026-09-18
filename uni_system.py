@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #Student data format 
 import email
@@ -13,6 +14,12 @@ class UniApp:
     def universitySystem(self):
         while True:
             print("\nWelcome to the University System. please choose a following option")
+=======
+class UniApp:
+    def run(self):
+        while True:
+            print("\nPlease choose an option:")
+>>>>>>> 8175304eaace07778e72d5f325e522b60deb880c
             print(" (A) Admin")
             print(" (S) Student")
             print(" (X) Exit")
@@ -28,10 +35,16 @@ class UniApp:
             else:
                 print("Invalid. Please try again.")
 
+<<<<<<< HEAD
 #The Student subsystem menu, which includes login and registration functionalities for students.
     def studentSystem(self):
         while True:
             print("\n Welsome to the Student System. please choose a following option:")
+=======
+    def studentSystem(self):
+        while True:
+            print("\nStudent System Menu:")
+>>>>>>> 8175304eaace07778e72d5f325e522b60deb880c
             print(" (l) login")
             print(" (r) register")
             print(" (x) exit")
@@ -47,6 +60,7 @@ class UniApp:
             else:
                 print("Invalid. Please try again.")
 
+<<<<<<< HEAD
 
 #Student Registration functionality.
     def registerStudent(self):
@@ -139,3 +153,9 @@ def loginStudent(self):
 
 
 
+=======
+    def loginStudent(self):
+        print("Student login functionality is not ready yet.")
+    def registerStudent(self):
+        print("Student registration functionality is not ready yet.")
+>>>>>>> 8175304eaace07778e72d5f325e522b60deb880c
