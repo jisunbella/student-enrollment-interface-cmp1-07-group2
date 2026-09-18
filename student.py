@@ -3,5 +3,6 @@ class Student:
         self.name = name
         self.email = email
         self.password = password
-        self.student_id = studentId
+        self.studentId = studentId
         self.subjects = subjects if subjects is not None else []
+
