@@ -94,7 +94,7 @@ class UniApp:
 
      
 #validation for email and password format
-    def validateEmail(self, email): #email ## Todo: email format: firstname.lastname@university.com  # 현재 특수문자 입력이 허용돼서 아이디 부분 "문자.문자" 형식만 입력 가능하도록 validation 수정
+    def validateEmail(self, email): #email  # Todo: email format: firstname.lastname@university.com  # 현재 특수문자 입력이 허용돼서 아이디 부분 "문자.문자" 형식만 입력 가능하도록 validation 수정
         pattern = r"[^@\s]+@university\.com"
         return bool(re.fullmatch(pattern, email))
 

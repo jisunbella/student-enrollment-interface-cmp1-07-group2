@@ -7,7 +7,7 @@ class Database:
         self.dataFile=(
             Path(dataFile)
             if dataFile is not None 
-            else Path(__file__).with_name("Students.data")
+            else Path(__file__).with_name("students.data")
         )
         if not self.dataFile.exists():
             self.saveStudent([])
