@@ -1,6 +1,5 @@
 import json
 from pathlib import Path
-
 from student import Student 
 
 class Database: 
@@ -8,7 +7,7 @@ class Database:
         self.dataFile=(
             Path(dataFile)
             if dataFile is not None 
-            else Path(__file__).with_name("students.data")
+            else Path(__file__).with_name("Students.data")
         )
         if not self.dataFile.exists():
             self.saveStudent([])
@@ -25,7 +24,7 @@ class Database:
             self.dataFile.name + ".temp"
         )
         with tempFile.open ("w",encoding ="utf-8") as file:
-            json.dump(data, file)
+            json.dump(data, file, indent=0)
         tempFile.replace(self.dataFile)
 
 #bring the student data as the reader mode 
@@ -40,6 +39,9 @@ class Database:
 
         return studentsInfo
     
+
+
+
 
 
 
