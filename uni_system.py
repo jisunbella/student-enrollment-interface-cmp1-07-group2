@@ -18,7 +18,7 @@ class UniApp:
             print(" (A) Admin")
             print(" (S) Student")
             print(" (X) Exit")
-            choice = input("Enter your choice (A-S-X): ")
+            choice = input("Enter your choice (A-S-X): ").upper()
 
             if choice == 'A': 
                 print("Please login as an admin, otherwise Please choose a different option.")
@@ -37,8 +37,7 @@ class UniApp:
             print(" (l) login")
             print(" (r) register")
             print(" (x) exit")
-            choice = input("Enter your choice (l-r-x): ")
-
+            choice = input("Enter your choice (l-r-x): ").lower()
             if choice == 'l':
                 self.loginStudent()
             elif choice == 'r':
@@ -61,7 +60,7 @@ class UniApp:
                 print("Wrong access. Name cannot be empty. Please try again.")
             
         while True:
-            email = input("Enter your email (name@university.com): ")
+            email = input("Enter your email (name@university.com): ")  # Todo: firstname.lastname@university.com
             if self.validateEmail(email):
                 break
             else:
@@ -95,11 +94,11 @@ class UniApp:
 
      
 #validation for email and password format
-    def validateEmail(self, email): #email
+    def validateEmail(self, email): #email ## Todo: email format: firstname.lastname@university.com  # 현재 특수문자 입력이 허용돼서 아이디 부분 "문자.문자" 형식만 입력 가능하도록 validation 수정
         pattern = r"[^@\s]+@university\.com"
         return bool(re.fullmatch(pattern, email))
 
-    def validatePassword(self, password): #password
+    def validatePassword(self, password): #password  # Todo: password format이 현재는 대문자 + 영문4글자 + 숫자3자리로 고정되어있는데, 대문자 시작 부분만 고정하고 뒤에는 영문, 숫자 입력 순서 상관없이 가능하도록 수정 필요
         pattern = r"[A-Z][A-Za-z]{4,}[0-9]{3,}"
         return bool(re.fullmatch(pattern, password))
     
@@ -110,6 +109,11 @@ class UniApp:
             studentID = str(random.randint(1, 999999)).zfill(6)
             if studentID not in existingIds:
                 return studentID
+
+#만약 999999까지 다 차면 어떻게 되나요? 
+# 에러 처리 하면 됩니다!
+# "All available student IDs have been used. A new student ID cannot be generated. Please contact the administrator."
+# 이런식으로 message를 띄우고, 시스템 시작 화면으로 돌아가게 하면 될 것 같아요.
 
 #student login 
     def loginStudent(self):
