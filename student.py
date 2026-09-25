@@ -12,7 +12,7 @@ class Student:
             "email": self.email, 
             "password":self.password, 
             "studentId": self.studentId, 
-            "subjets": self.subjects,   
+            "subjects": self.subjects,   
          }
 
 
@@ -23,6 +23,6 @@ class Student:
             name=record["name"],
             email=record["email"], 
             password=record["password"],
-            studentId=record["StudentId"],
+            studentId=record["studentId"],
             subjects=record.get("subjects",[]),
         )
