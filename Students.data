@@ -33,5 +33,12 @@
 "password": "PAssword123",
 "studentId": "344234",
 "subjects": []
+},
+{
+"name": "hj",
+"email": "hyeonji.you@university.com",
+"password": "Pa123ssored",
+"studentId": "388182",
+"subjects": []
 }
 ]

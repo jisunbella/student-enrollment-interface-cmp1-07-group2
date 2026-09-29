@@ -60,12 +60,12 @@ class UniApp:
                 print("Wrong access. Name cannot be empty. Please try again.")
             
         while True:
-            email = input("Enter your email (name@university.com): ")  # Todo: firstname.lastname@university.com
+            email = input("Enter your email, following the format (firstname.lastname@university.com): ")  # Todo: firstname.lastname@university.com
             if self.validateEmail(email):
                 break
             else:
                 print("""Wrong access. Enter a valid email address
-                name@university.com""")
+                firstname.lastname@university.com""")
 
         while True:
             password = input("Enter your password (Password123): ")
@@ -94,13 +94,18 @@ class UniApp:
 
      
 #validation for email and password format
-    def validateEmail(self, email): #email  # Todo: email format: firstname.lastname@university.com  # 현재 특수문자 입력이 허용돼서 아이디 부분 "문자.문자" 형식만 입력 가능하도록 validation 수정
-        pattern = r"[^@\s]+@university\.com"
+    def validateEmail(self, email): #email  # Todo: email format: firstname.lastname@university.com  # 현재 특수문자 입력이 허용돼서 아이디 부분 "문자.문자" 형식만 입력 가능하도록 validation 수정 => actioned! 
+        pattern = r"[A-Za-z]+\.[A-Za-z]+@university\.com"
         return bool(re.fullmatch(pattern, email))
 
-    def validatePassword(self, password): #password  # Todo: password format이 현재는 대문자 + 영문4글자 + 숫자3자리로 고정되어있는데, 대문자 시작 부분만 고정하고 뒤에는 영문, 숫자 입력 순서 상관없이 가능하도록 수정 필요
-        pattern = r"[A-Z][A-Za-z]{4,}[0-9]{3,}"
-        return bool(re.fullmatch(pattern, password))
+    def validatePassword(self, password): #password  # Todo: password format이 현재는 대문자 + 영문4글자 + 숫자3자리로 고정되어있는데, 대문자 시작 부분만 고정하고 뒤에는 영문, 숫자 입력 순서 상관없이 가능하도록 수정 필요 => actioned! 
+        pattern = r"[A-Z][Z-Za-z0-9]*"
+        return (
+            bool(re.fullmatch(pattern,password))
+            and sum(c.isalpha() for c in password) >= 5
+            and sum(c.isdigit() for c in password) >= 3
+            )
+    
     
 #Auto-student ID generation 
     def generateStudentId(self):
