@@ -130,7 +130,8 @@ class UniApp:
         
 
 
-  #  def enrolSubject (self):
-#Subject remove: How should it work. -> enter the subject ID->system find the subject -> remove from the list -> update -> display 
+
+
+
 
         
