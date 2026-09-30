@@ -40,5 +40,12 @@
 "password": "Pa123ssored",
 "studentId": "388182",
 "subjects": []
+},
+{
+"name": "test",
+"email": "system.test@university.com",
+"password": "Pass123wordtest",
+"studentId": "386052",
+"subjects": []
 }
 ]
