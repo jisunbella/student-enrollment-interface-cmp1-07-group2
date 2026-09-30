@@ -48,7 +48,7 @@ class UniApp:
             else:
                 print("Invalid. Please try again.")
 
-
+# 각각의 기능을 다른 파일로 빼서, 
 #Student Registration functionality.
     def registerStudent(self):       
         print("\n Welcome to the Student Registration System")
@@ -99,7 +99,7 @@ class UniApp:
         return bool(re.fullmatch(pattern, email))
 
     def validatePassword(self, password): #password  # Todo: password format이 현재는 대문자 + 영문4글자 + 숫자3자리로 고정되어있는데, 대문자 시작 부분만 고정하고 뒤에는 영문, 숫자 입력 순서 상관없이 가능하도록 수정 필요 => actioned! 
-        pattern = r"[A-Z][Z-Za-z0-9]*"
+        pattern = r"[A-Z][A-Za-z0-9]*"
         return (
             bool(re.fullmatch(pattern,password))
             and sum(c.isalpha() for c in password) >= 5
@@ -118,7 +118,7 @@ class UniApp:
 # 에러 처리 하면 됩니다!
 # "All available student IDs have been used. A new student ID cannot be generated. Please contact the administrator."
 # 이런식으로 message를 띄우고, 시스템 시작 화면으로 돌아가게 하면 될 것 같아요.
-        if len(existingIds)>=999999: 
+        if len(existingIds) > 999999: 
             print ("""
             All available student IDs have been used
             A new student ID cannot be generated.
@@ -128,4 +128,9 @@ class UniApp:
     def loginStudent(self):
         print("\nwelcome to the Student Login system")
         
+
+
+    def enrolSubject (self)
+#Subject remove: How should it work. -> enter the subject ID->system find the subject -> remove from the list -> update -> display 
+
         

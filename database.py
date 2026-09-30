@@ -7,7 +7,7 @@ class Database:
         self.dataFile=(
             Path(dataFile)
             if dataFile is not None 
-            else Path(__file__).with_name("students.data")
+            else Path(__file__).with_name("students.data") #data base; student data file; generated automatically 
         )
         if not self.dataFile.exists():
             self.saveStudent([])
@@ -40,6 +40,7 @@ class Database:
         return studentsInfo
     
 
+# password 암호화ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ?
 
 
 
