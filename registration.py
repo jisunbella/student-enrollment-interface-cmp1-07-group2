@@ -16,7 +16,7 @@ def registerStudent(students, database):
             
     while True:
         email = input("Enter your email, following the format (firstname.lastname@university.com): ")  # Todo: firstname.lastname@university.com
-        if self.validateEmail(email):
+        if validateEmail(email):
             break
         else:
             print("""Wrong access. Enter a valid email address
@@ -24,7 +24,7 @@ def registerStudent(students, database):
 
     while True:
         password = input("Enter your password (Password123): ")
-        if self.validatePassword(password):
+        if validatePassword(password):
             break
         else:
             print("""Wrong access. Please follow the password format.
@@ -33,19 +33,20 @@ def registerStudent(students, database):
             - Contain at least 5-letter
             - Contain at least 3-digit Please try again.""")
 
-    studentId = self.generateStudentId(students)
+    studentId = generateStudentId(students)
     if studentId is None: 
-        return 
+        return students
 ##
     student = Student(name, email, password, studentId)
     newStudents = students+[student]
 
     database.saveStudent(newStudents)
-    students = newStudents
-
+  
     print("""Registration successful!, 
     please back to the student system and login with your email and password.""")
     print(f"Your student ID is: {student.studentId}")
+
+    return newStudents #memory uptodate. return the updated list 
 
      
 #validation for email and password format
@@ -64,7 +65,7 @@ def validatePassword(password): #password  # Todo: password format이 현재는 
     
 #Auto-student ID generation 
 def generateStudentId(students):
-    existingIds = {student.studentId for student in self.students}
+    existingIds = {student.studentId for student in students}
     while True: 
         studentID = str(random.randint(1, 999999)).zfill(6)
         if studentID not in existingIds:
@@ -79,4 +80,4 @@ def generateStudentId(students):
             A new student ID cannot be generated.
             Please contact the administrator""")
 
-            return newStudent #memory uptodate. 
+

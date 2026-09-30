@@ -47,5 +47,26 @@
 "password": "Pass123wordtest",
 "studentId": "386052",
 "subjects": []
+},
+{
+"name": "robyn",
+"email": "system.test@university.com",
+"password": "Test123password",
+"studentId": "651525",
+"subjects": []
+},
+{
+"name": "testsystem",
+"email": "system.test@university.com",
+"password": "Password123test",
+"studentId": "536399",
+"subjects": []
+},
+{
+"name": "errortest",
+"email": "error.fixed@university.com",
+"password": "Password1234terminal",
+"studentId": "757481",
+"subjects": []
 }
 ]
