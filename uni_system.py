@@ -114,12 +114,18 @@ class UniApp:
             studentID = str(random.randint(1, 999999)).zfill(6)
             if studentID not in existingIds:
                 return studentID
-
 #만약 999999까지 다 차면 어떻게 되나요? 
 # 에러 처리 하면 됩니다!
 # "All available student IDs have been used. A new student ID cannot be generated. Please contact the administrator."
 # 이런식으로 message를 띄우고, 시스템 시작 화면으로 돌아가게 하면 될 것 같아요.
+        if len(existingIds)>=999999: 
+            print ("""
+            All available student IDs have been used
+            A new student ID cannot be generated.
+            Please contact the administrator""")
+# if len();  used for execute code based on the number of items in a collection
 
-#student login 
     def loginStudent(self):
-        print("\n Welcome to the Student Login System, not ready yet")
+        print("\nwelcome to the Student Login system")
+        
+        
