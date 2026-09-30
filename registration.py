@@ -54,6 +54,13 @@ def validateEmail(email): #email  # Todo: email format: firstname.lastname@unive
     pattern = r"[A-Za-z]+\.[A-Za-z]+@university\.com"
     return bool(re.fullmatch(pattern, email))
 
+#currently register multiple accounts with the same email address. Since we only have  pattern validation right now, should i add a duplicate email check before completing the registration ?  
+    existingEmails = {student.email for student in students}
+    if email in existingEmails:
+        print("This email is already registered. Please login or try another email.")
+        return students
+#근데 동명이인이 있으면 어떻게 하죠.....? 우리학교 시스템처럼 뒤에 숫자같은 구분문자/suffix 를 자동으로 붙이는 식으로 해야할까요....? 
+
 def validatePassword(password): #password  # Todo: password format이 현재는 대문자 + 영문4글자 + 숫자3자리로 고정되어있는데, 대문자 시작 부분만 고정하고 뒤에는 영문, 숫자 입력 순서 상관없이 가능하도록 수정 필요 => actioned! 
     pattern = r"[A-Z][A-Za-z0-9]*"
     return (
