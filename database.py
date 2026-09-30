@@ -41,6 +41,7 @@ class Database:
     
 
 # password 암호화ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ?
+#암호화는 optional이라 안해도 될 것 같아요 
 
 
 
