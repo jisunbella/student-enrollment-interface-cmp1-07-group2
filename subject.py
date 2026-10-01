@@ -1,2 +1,0 @@
-#enrolment 작업하실때 확인 해줏ㅔ요 
-# #Subject remove: How should it work. -> enter the subject ID->system find the subject -> remove from the list -> update -> display 

@@ -2,6 +2,7 @@
 from database import Database
 import registration
 import login
+import subject_enrolment
 
 
 class UniApp:
@@ -62,8 +63,10 @@ class UniApp:
 
         if student is None:
             return None
-
-        return student
+        
+        if student is not None:
+            subject_enrolment.subjectEnrolmentSystem(student)
+            return student
 
 #login 후 student page;' enrolment page로 가게 해야합니다; here need to be connected to the subject enrolment system 
 
