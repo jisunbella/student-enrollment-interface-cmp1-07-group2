@@ -19,7 +19,7 @@ def loginStudent(students):
 
         for student in students:
             if student.email == email and student.password == password:
-                print (f"login successful!, Welcome, {student.name}!")
+                print ("login successful!, Welcome!")
                 return student 
 
         print ("Login failed. please check your email and password.")
