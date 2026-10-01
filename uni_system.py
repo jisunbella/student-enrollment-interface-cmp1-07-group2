@@ -1,6 +1,7 @@
 
 from database import Database
 import registration
+import login
 
 
 class UniApp:
@@ -56,8 +57,15 @@ class UniApp:
         )
 
     def loginStudent(self):
-        print("login function need to be implanted")
+        self.students = self.database.loadStudents()
+        student = login.loginStudent(self.students)
 
+        if student is None:
+            return None
+
+        return student
+
+#login 후 student page;' enrolment page로 가게 해야합니다; here need to be connected to the subject enrolment system 
 
 
 

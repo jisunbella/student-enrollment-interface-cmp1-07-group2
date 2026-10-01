@@ -25,7 +25,7 @@ def registerStudent(students, database):
                 print("This email is already registered. Please login or try another email.")
                 continue 
 #중복체크      
-#근데 동명이인이 있으면 어떻게 하죠.....? 우리학교 시스템처럼 뒤에 숫자같은 구분문자/suffix 를 자동으로 붙이는 식으로 해야할까요....?         
+#근데 동명이인이 있으면 어떻게 하죠.....? 우리학교 시스템처럼 뒤에 숫자같은 구분문자/suffix 를 자동으로 붙이는 식으로 해야할까요....?       => 일단 prior requirement는 아니라서 후순위!   
             break
 
         else:
