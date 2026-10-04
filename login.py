@@ -7,7 +7,6 @@
    #     return None
     #return value 
 
-
 def loginStudent(students):
     print("\nwelcome to the Student Login system.")
     print ("""please login with your validated email and password
@@ -21,8 +20,10 @@ def loginStudent(students):
             if student.email == email and student.password == password:
                 print ("login successful!, Welcome!")
                 return student 
-
+        #=> 추가로 로그인 상태 유지할 수 있게 로그인 기록 기억 넣어야할까요? 
+        #어떻게 하는지 몰라서 좀 더 찾아봐야할 듯! student  
+        #student informationn이 subject enrolment system으로 바로 전달될 수 있게 uni_systedml login에 불러오는 data를추초가했어요
+#page는 student enrolment page로 ㄷ넘어가게 해야함 
         print ("Login failed. please check your email and password.")
-        print ("please try again")
-        print ("if you have not registered, exit and register first.")
-        
+        print ("Try again")
+        print ("or if you have not registered, exit and register first.")
