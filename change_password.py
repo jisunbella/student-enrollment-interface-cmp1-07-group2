@@ -8,7 +8,7 @@ def changePassword(student, students, database):
     while True:
         currentPassword = input("Enter your current password: ")
         if currentPassword == student.password:
-            break  # Exit the loop if the current password is correct
+            break  # exit loop, after validation of the current password
         else:
             print("Incorrect current password. Please try again.")
 
@@ -34,6 +34,6 @@ def changePassword(student, students, database):
         database.saveStudent(students) #changed password will be saved in the database
 
         print ("Password changed successfully! Please use your new password the next time you log in.")
-        return  # Exit the function after changing the password
+        return  # Exit the function after changing the password -> back to the subject enrolment system
 
     
