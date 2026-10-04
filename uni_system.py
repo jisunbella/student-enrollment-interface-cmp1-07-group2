@@ -74,7 +74,6 @@ class UniApp:
             return student
 
 #actioned. login 후 student page;' enrolment page로 가게 해야합니다; here need to be connected to the subject enrolment system 
-
 # #done! 
 
 

@@ -1,8 +1,12 @@
 from registration import validatePassword
 
+#original password validation function needed?
+# ; before changing the password, the user enter the original password to verify their identity. 
+
 def changePassword(student, students, database):
     print("\nWelcome to the Change Password System. Please enter your new password: ")
 
+#password validation and confirmation => validation function is called from registration.py
     while True:
         newPassword = input("Enter your new password: ")
 

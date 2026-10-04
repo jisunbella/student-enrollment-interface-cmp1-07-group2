@@ -9,13 +9,13 @@ def subjectEnrolmentSystem(student, students, database):
         print ("(s) show enrolled subjects")
         print ("(x) exit")
         choice = input("Enter your choice (c-e-r-s-x): ").lower()
-
-
+#여기에 choice에 따라 각각의 기능을정의하고 def를 불러오는 방식으로 구현하면 될 것 같습니다아앙
+#change password def는 change_password.py에 따로 빼서 정의해서/
+# enrol, remove, show def는 subject_enrolment.py(현재파일)에 정의해도 될 것 같아요 but up to you! :)
 
 
         if choice == 'c':
-            changePassword(student, students, database) 
-#enrolment 작업하실때 확인 해줏ㅔ요 => 과제 descriptption 에 change password가enrolmentSystem에 포함되어 있어서 선택지를 여기에 넣었지만 function은 다른 파일로 뺄까요?!  
+            changePassword(student, students, database)  
 # actioned. changePassword import "from change_password import changePassword"
 
 

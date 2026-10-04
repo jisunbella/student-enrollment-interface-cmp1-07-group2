@@ -30,7 +30,7 @@
 {
 "name": "hyeonji",
 "email": "Hyeonji@university.com",
-"password": "PAssword123",
+"password": "Password1234",
 "studentId": "344234",
 "subjects": []
 },
@@ -67,6 +67,13 @@
 "email": "error.fixed@university.com",
 "password": "Password1234terminal",
 "studentId": "757481",
+"subjects": []
+},
+{
+"name": "FSD",
+"email": "FSD.TEST@university.com",
+"password": "FSDPASSWORDCHANGE123",
+"studentId": "242245",
 "subjects": []
 }
 ]
