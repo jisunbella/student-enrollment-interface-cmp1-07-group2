@@ -18,7 +18,7 @@ def loginStudent(students):
 
         for student in students:
             if student.email == email and student.password == password:
-                print ("login successful!, Welcome!")
+                print (f"login successful!, Welcome {student.name} (ID: {student.studentId})!")
                 return student 
             
         #actioned. page는 student enrolment page로 넘어가게 해야함

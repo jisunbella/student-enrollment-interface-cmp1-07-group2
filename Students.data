@@ -58,7 +58,7 @@
 {
 "name": "testsystem",
 "email": "system.test@university.com",
-"password": "Passwordtest123",
+"password": "ChangePassword123",
 "studentId": "536399",
 "subjects": []
 },
