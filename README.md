@@ -22,5 +22,5 @@ Run the following command:
 python uni_app_main.py
 ```
 
-4. Follow the menu prompts 
+and Follow the menu prompts 
 
