@@ -1,6 +1,6 @@
 from registration import validatePassword
 
-#actioned. original password validation function needed?
+#actioned. original password validation function needed? -튜터가 말했던 것 같은데.....
 # ; before changing the password, the user enter the original password to verify their identity. 
 
 def changePassword(student, students, database):
@@ -10,7 +10,7 @@ def changePassword(student, students, database):
         if currentPassword == student.password:
             break  # exit loop, after validation of the current password
         else:
-            print("Incorrect current password. Please try again.")
+            print("Failed Verification. Please try again.")
 
 
 #password validation and confirmation => validation function is called from registration.py
@@ -29,11 +29,13 @@ def changePassword(student, students, database):
         if newPassword != confirmPassword:
             print("Passwords do not match. Please try again.")
             continue
-
+#newPassword !=originalPassword => check if the new password is the same as the original password.
+#필요한가?
         student.password = newPassword
         database.saveStudent(students) #changed password will be saved in the database
 
-        print ("Password changed successfully! Please use your new password the next time you log in.")
+        print ("""Password changed successfully! 
+        Please use your new password the next time you log in.""")
         return  # Exit the function after changing the password -> back to the subject enrolment system
 
     
