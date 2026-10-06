@@ -3,6 +3,7 @@ from database import Database
 import registration
 import login
 import subject_enrolment
+import admin
 #from change_password import changePassword
 
 
@@ -11,6 +12,7 @@ class UniApp:
     def __init__(self,dataFile=None):
         self.database = Database() if dataFile is None else Database(dataFile)  
         self.students = self.database.loadStudents()
+        self.admin_system = admin.AdminSystem(self.database)
     
 #University System requiremnt, choosing the subsystem class. 
     def universitySystem(self):
@@ -23,7 +25,7 @@ class UniApp:
             choice = input("Enter your choice (A-S-X): ").upper()
 
             if choice == 'A': 
-                print("Please login as an admin, otherwise Please choose a different option.")
+                self.admin_system.adminSystem()
             elif choice == 'S':
                 self.studentSystem()
             elif choice == 'X':
