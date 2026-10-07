@@ -26,3 +26,5 @@ class Student:
             studentId=record["studentId"],
             subjects=record.get("subjects",[]),
         )
+
+       

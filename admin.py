@@ -55,7 +55,7 @@ class AdminSystem:
     def categoriseStudentsPassFail(self):
         self.students = self.database.loadStudents()
         for student in self.students:
-            if student.average_mark >= 50:
+            if student.average_mark >= 50: # this averageMark is the average mark of 4 subject, like the GPA, we wouldn't generate the mark for each subject, only scoring
                 status = "Pass"
             else:
                 status = "Fail"

@@ -75,5 +75,12 @@
 "password": "FSDPASSWORDCHANGE123",
 "studentId": "242245",
 "subjects": []
+},
+{
+"name": "Robyn ",
+"email": "robyn.you@university.com",
+"password": "TESTpassword123",
+"studentId": "378757",
+"subjects": []
 }
 ]
