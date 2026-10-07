@@ -1,0 +1,103 @@
+[
+  {
+    "name": "robyn",
+    "email": "robyn@university.com",
+    "password": "Robyn0801",
+    "studentId": "074526",
+    "subjects": [
+      {
+        "id": "001",
+        "mark": 88,
+        "grade": "HD"
+      }
+    ]
+  },
+  {
+    "name": "ji sun lee",
+    "email": "jisun.lee@university.com",
+    "password": "Jisun123",
+    "studentId": "989349",
+    "subjects": [
+      {
+        "id": "001",
+        "mark": 78,
+        "grade": "D"
+      }
+    ]
+  },
+  {
+    "name": "bella",
+    "email": "jisun.lee@university.com",
+    "password": "Bella123",
+    "studentId": "050547",
+    "subjects": [
+      {
+        "id": "001",
+        "mark": 35,
+        "grade": "Z"
+      }
+    ]
+  },
+  {
+    "name": "bella",
+    "email": "bella@university.com",
+    "password": "Bella111",
+    "studentId": "324695",
+    "subjects": [
+      {
+        "id": "002",
+        "mark": 35,
+        "grade": "Z"
+      }
+    ]
+  },
+  {
+    "name": "hyeonji",
+    "email": "Hyeonji@university.com",
+    "password": "Password1234",
+    "studentId": "344234",
+    "subjects": []
+  },
+  {
+    "name": "hj",
+    "email": "hyeonji.you@university.com",
+    "password": "Pa123ssored",
+    "studentId": "388182",
+    "subjects": []
+  },
+  {
+    "name": "test",
+    "email": "system.test@university.com",
+    "password": "Pass123wordtest",
+    "studentId": "386052",
+    "subjects": []
+  },
+  {
+    "name": "robyn",
+    "email": "system.test@university.com",
+    "password": "Test123password",
+    "studentId": "651525",
+    "subjects": []
+  },
+  {
+    "name": "testsystem",
+    "email": "system.test@university.com",
+    "password": "ChangePassword123",
+    "studentId": "536399",
+    "subjects": []
+  },
+  {
+    "name": "errortest",
+    "email": "error.fixed@university.com",
+    "password": "Password1234terminal",
+    "studentId": "757481",
+    "subjects": []
+  },
+  {
+    "name": "FSD",
+    "email": "FSD.TEST@university.com",
+    "password": "FSDPASSWORDCHANGE123",
+    "studentId": "242245",
+    "subjects": []
+  }
+]

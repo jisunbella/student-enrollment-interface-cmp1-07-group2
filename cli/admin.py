@@ -48,7 +48,7 @@ class AdminSystem:
 
     def organiseStudentByGrade(self):
         self.students = self.database.loadStudents()
-        sorted_students = sorted(self.students, key=lambda x: x.grade)
+        sorted_students = sorted(self.students, key=lambda x: x.subjects.grade)
         for student in sorted_students:
             print(student)
 

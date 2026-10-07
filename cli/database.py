@@ -7,12 +7,12 @@ class Database:
         self.dataFile=(
             Path(dataFile)
             if dataFile is not None 
-            else Path(__file__).with_name("students.data") #data base; student data file; generated automatically 
+            else Path(__file__).with_name("Students.data") #data base; student data file; generated automatically 
         )
         if not self.dataFile.exists():
             self.saveStudent([])
 
-#save Sutdnet Inoforamation 
+#save Student Information 
     def saveStudent(self,studentsInfo):
         data =[]
 
@@ -38,11 +38,6 @@ class Database:
             studentsInfo.append(student)
 
         return studentsInfo
-
-
-
-# password 암호화ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ?
-#암호화는 optional이라 안해도 될 것 같아요 ?
 
 
 

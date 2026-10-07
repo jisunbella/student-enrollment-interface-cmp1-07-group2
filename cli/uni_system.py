@@ -1,10 +1,12 @@
 
+# database
 from database import Database
-import registration
-import login
-import subject_enrolment
-import admin
-#from change_password import changePassword
+# student
+import registration as registration
+import login as login
+import subject_enrolment as subject_enrolment
+# admin
+import admin as admin
 
 
 class UniApp:
