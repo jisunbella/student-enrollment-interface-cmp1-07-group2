@@ -19,6 +19,7 @@ def subjectEnrolmentSystem(student, students, database):
 # actioned. changePassword import "from change_password import changePassword"
 
 
+#subject enrolment; creating the subject list , length of 5 (limit) -> if more than 4, showing error -> if student tr more thant this, showing error - reaching the max num of subject  
 
 
 

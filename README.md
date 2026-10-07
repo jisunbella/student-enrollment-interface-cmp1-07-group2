@@ -24,3 +24,13 @@ python uni_app_main.py
 
 and Follow the menu prompts 
 
+#all the detail need to be in the readme.
+
+
+
+#contribuition => which feature who import /// 
+#example question How the GUI comminicate with the GUI 
+     #CLI/GUI/Report file 
+
+
+     #readmefile: imformation of project 
