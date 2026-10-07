@@ -18,9 +18,12 @@ The project scope includes:
 ## How to Run
 Run the following command:
 
+# WINDOW
 ```bash
 python uni_app_main.py
 ```
+# IOS
+python3 uni_app_main.py
 
 and Follow the menu prompts 
 
