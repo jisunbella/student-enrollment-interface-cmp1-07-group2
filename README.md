@@ -40,6 +40,7 @@ Password can be vary among student, while it is acceptable to have the same pass
 ### Student ID
 
 Each student is assigned a unique, randomly generated ID between 1 and 999,999.
+
 IDs are displayed as six-digit strings, including leading zeros where necessary. For example: `123456`.
 
 
@@ -75,38 +76,38 @@ python uni_app_main.py
 
 ### University System
 
-|**Option**| **Action**              |
-| A        | Open the Admin System   |
-| S        | Open the Student System |
-| X        | Exit the application    |
+|**Option**| **Action**              |  
+| A        | Open the Admin System   |  
+| S        | Open the Student System |  
+| X        | Exit the application    |  
 
 ### Student System
 
-|**Option**| **Action**                      |
-| l        | Log in                          |
-| r        | Register                        |
-| x        | Return to the University System |
+|**Option**| **Action**                      |  
+| l        | Log in                          |  
+| r        | Register                        |  
+| x        | Return to the University System |  
 
 ### Subject Enrolment System
 
 This menu is accessed after a successful login.
 
-|**Option**| **Action**                        |
-| c        | Change password                   |
-| e        | Enrol in a subject                |
-| r        | Remove a subject                  |
-| s        | Show enrolled subjects            |
-| x        | Exit the Subject Enrolment System |
+|**Option**| **Action**                        |  
+| c        | Change password                   |  
+| e        | Enrol in a subject                |  
+| r        | Remove a subject                  |  
+| s        | Show enrolled subjects            |  
+| x        | Exit the Subject Enrolment System |  
 
 ### Admin System
 
-|**Option**| **Action**                        |
-| V        | view all student                  |
-| O        | Organise student by grade         |
-| C        | Categorise students P/F           |
-| R        | Remove student By ID (individual) |
-| L        | clear student data (entire)       |
-| X        | Exit the Admin Systme             |
+|**Option**| **Action**                        |  
+| V        | view all student                  |  
+| O        | Organise student by grade         |  
+| C        | Categorise students P/F           |  
+| R        | Remove student By ID (individual) |  
+| L        | clear student data (entire)       |  
+| X        | Exit the Admin Systme             |  
 
 
 ## Data Storage
@@ -129,6 +130,7 @@ IF the data file does not exist, the application creates it automatically in the
 **Team:** cmp1-07-group2
 
 This application is developed collaboratively, with team members contributing to individual features and system integration.
+
 - Hyejin Han (26510228): Subject_Enrolment 
 - Jisun Lee (26645135): Admin_system 
 - Robyn You (25960535): uni_System & Student_system 
