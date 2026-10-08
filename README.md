@@ -88,7 +88,9 @@ python uni_app_main.py
 | X        | Exit the application    |  
 
 ### Student System
-s
+
+student can choose Register, if has not registered, and can start the login with the registered Email and Password
+
 |**Option**| **Action**                      |  
 |----------|---------------------------------|  
 | l        | Log in                          |  
@@ -108,6 +110,8 @@ This menu is accessed after a successful login.
 | x        | Exit the Subject Enrolment System |  
 
 ### Admin System
+
+Admin does not need to register for accessing the systen. 
 
 |**Option**| **Action**                        |  
 |----------|-----------------------------------|
