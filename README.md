@@ -33,8 +33,9 @@ Passwords must:
 - Contain at least five English letters, including the first letter.
 - Contain at least three digits.
 - Contain only English letters and digits.
-Letters and digits may appear in any order after the first character.
-- Password can be vary among student, while it is acceptable to have the same password with others. 
+- Letters and digits may appear in any order after the first character.
+
+Password can be vary among student, while it is acceptable to have the same password with others, while it shows error where one or more password rule isn't matched
 
 ### Student ID
 
@@ -57,7 +58,8 @@ IDs are displayed as six-digit strings, including leading zeros where necessary.
 
 
 ## How to Run
-** Requirement **
+**Requirement**
+
      - python
      - A terminal or an IDE capable of running python\
 
@@ -73,38 +75,38 @@ python uni_app_main.py
 
 ### University System
 
-|'Option'| 'Action'                |
-| A      | Open the Admin System   |
-| S      | Open the Student System |
-| X      | Exit the application    |
+|**Option**| **Action**              |
+| A        | Open the Admin System   |
+| S        | Open the Student System |
+| X        | Exit the application    |
 
 ### Student System
 
-|'Option'| 'Action'                        |
-| l      | Log in                          |
-| r      | Register                        |
-| x      | Return to the University System |
+|**Option**| **Action**                      |
+| l        | Log in                          |
+| r        | Register                        |
+| x        | Return to the University System |
 
 ### Subject Enrolment System
 
 This menu is accessed after a successful login.
 
-|'Option'| 'Action'                          |
-| c      | Change password                   |
-| e      | Enrol in a subject                |
-| r      | Remove a subject                  |
-| s      | Show enrolled subjects            |
-| x      | Exit the Subject Enrolment System |
+|**Option**| **Action**                        |
+| c        | Change password                   |
+| e        | Enrol in a subject                |
+| r        | Remove a subject                  |
+| s        | Show enrolled subjects            |
+| x        | Exit the Subject Enrolment System |
 
 ### Admin System
 
-|'Option'| 'Action'                          |
-| V      | view all student                  |
-| O      | Organise student by grade         |
-| C      | Categorise students P/F           |
-| R      | Remove student By ID (individual) |
-| L      | clear student data (entire)       |
-| X      | Exit the Admin Systme             |
+|**Option**| **Action**                        |
+| V        | view all student                  |
+| O        | Organise student by grade         |
+| C        | Categorise students P/F           |
+| R        | Remove student By ID (individual) |
+| L        | clear student data (entire)       |
+| X        | Exit the Admin Systme             |
 
 
 ## Data Storage
