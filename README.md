@@ -20,8 +20,10 @@ The project scope includes:
 Email addresses must follow this format:
 
 'firstname.lastname@university.com'
+
 , where shows erreor if:
 - Not matched with the format
+
      The first and last name sections must contatin English letters only, separtated one dot.  
 - have a same Email already exist 
 
@@ -46,8 +48,9 @@ IDs are displayed as six-digit strings, including leading zeros where necessary.
 
 ## student entroment rule and error 
 
+#need to fixed
 #max number 4
-#subject ID and score generation 
+#Subject ID and score generation 
 #subject remove 
 #showing error 
 
@@ -63,6 +66,8 @@ IDs are displayed as six-digit strings, including leading zeros where necessary.
 
      - python
      - A terminal or an IDE capable of running python\
+
+**Python Scripts**
 
 1. Download or clone this repository.
 2. Open a terminal in the project folder.
@@ -83,7 +88,7 @@ python uni_app_main.py
 | X        | Exit the application    |  
 
 ### Student System
-
+s
 |**Option**| **Action**                      |  
 |----------|---------------------------------|  
 | l        | Log in                          |  
@@ -121,7 +126,7 @@ Each student record contains:
 - Email address
 - Password
 - Student ID
-- Enrolled subjects
+- Enrolled subjects (0-4)
 
 This Database class provides the following mehods: 
 - `saveStudent(studentsInfo)`: Saves the student list to `students.data`.
@@ -145,13 +150,13 @@ This application is developed collaboratively, with team members contributing to
 
 
 
+
+#README. file: imformation of project 
+
 #all the detail need to be in the readme.
 
+#contribuition => which feature who import ///
 
-
-#contribuition => which feature who import /// 
 #example question How the GUI comminicate with the GUI 
+
      #CLI/GUI/Report file 
-
-
-     #readmefile: imformation of project 
