@@ -77,6 +77,7 @@ python uni_app_main.py
 ### University System
 
 |**Option**| **Action**              |  
+|----------|-------------------------|  
 | A        | Open the Admin System   |  
 | S        | Open the Student System |  
 | X        | Exit the application    |  
@@ -84,6 +85,7 @@ python uni_app_main.py
 ### Student System
 
 |**Option**| **Action**                      |  
+|----------|---------------------------------|  
 | l        | Log in                          |  
 | r        | Register                        |  
 | x        | Return to the University System |  
@@ -93,6 +95,7 @@ python uni_app_main.py
 This menu is accessed after a successful login.
 
 |**Option**| **Action**                        |  
+|----------|-----------------------------------|  
 | c        | Change password                   |  
 | e        | Enrol in a subject                |  
 | r        | Remove a subject                  |  
@@ -102,6 +105,7 @@ This menu is accessed after a successful login.
 ### Admin System
 
 |**Option**| **Action**                        |  
+|----------|-----------------------------------|
 | V        | view all student                  |  
 | O        | Organise student by grade         |  
 | C        | Categorise students P/F           |  
