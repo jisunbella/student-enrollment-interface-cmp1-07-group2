@@ -19,9 +19,24 @@
 "studentId": "989349",
 "subjects": [
 {
-"id": "001",
-"mark": 78,
-"grade": "D"
+"id": "560",
+"mark": 67,
+"grade": "C"
+},
+{
+"id": "555",
+"mark": 28,
+"grade": "Z"
+},
+{
+"id": "318",
+"mark": 50,
+"grade": "P"
+},
+{
+"id": "511",
+"mark": 26,
+"grade": "Z"
 }
 ]
 },
@@ -34,6 +49,11 @@
 {
 "id": "001",
 "mark": 35,
+"grade": "Z"
+},
+{
+"id": "753",
+"mark": 31,
 "grade": "Z"
 }
 ]

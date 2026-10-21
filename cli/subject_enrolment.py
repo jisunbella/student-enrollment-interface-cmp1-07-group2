@@ -77,6 +77,8 @@ def subjectEnrolmentSystem(student, students, database):
 
         elif choice == 'r':
             removeSubject(student, students, database)
+#subject remove button -> confrim add will require
+#after remove, it need to be update in student.data file as well! 
 
         elif choice == 's':
             viewEnrolment(student)

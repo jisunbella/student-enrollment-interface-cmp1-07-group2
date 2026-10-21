@@ -39,9 +39,3 @@ class Database:
             studentsInfo.append(student)
 
         return studentsInfo
-
-
-
-
-
-
